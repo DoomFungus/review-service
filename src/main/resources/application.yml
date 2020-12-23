@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: review-service
+  datasource:
+    url: ${DATASOURCE_URL}
+    driver-class-name: org.postgresql.Driver
+    password: ${DATASOURCE_PASSWORD}
+    username: ${DATASOURCE_USERNAME}
+server:
+  port: 80
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}/eureka/
+  instance:
+    hostname: ${DOMAIN_NAME}
+security:
+  user:
+    password: ${eureka.password}
+
