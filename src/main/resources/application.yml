@@ -18,5 +18,5 @@ eureka:
     hostname: ${DOMAIN_NAME}
     non-secure-port-enabled: true
     non-secure-port: 80
-    health-check-url: ${eureka.instance.hostname}${eureka.instance.healthCheckUrlPath}
-    status-page-url: ${eureka.instance.hostname}${eureka.instance.statusPageUrlPath}
+    health-check-url: https://${eureka.instance.hostname}${eureka.instance.healthCheckUrlPath}
+    status-page-url: https://${eureka.instance.hostname}${eureka.instance.statusPageUrlPath}
